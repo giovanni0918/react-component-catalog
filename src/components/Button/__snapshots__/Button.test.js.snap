@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`It should always render a button 1`] = `
+<button
+  className="Button Button--primary"
+  onClick={[Function]}
+>
+  hello
+</button>
+`;
