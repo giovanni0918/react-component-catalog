@@ -1,0 +1,28 @@
+{
+  "name": "react-component-catalog",
+  "version": "1.0.0",
+  "description": "My React component library. Designed to organize, test, and maintain the stateless functional components I use across all my React apps.",
+  "main": "server.js",
+  "repository": "https://github.com/giovanni0918/react-component-catalog.git",
+  "author": "Giovanni Orlando <gorlandor@gmail.com>",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-jest": "^20.0.3",
+    "babel-loader": "^7.0.0",
+    "babel-preset-env": "^1.5.1",
+    "babel-preset-flow": "^6.23.0",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.3",
+    "jest": "^20.0.4",
+    "react-test-renderer": "^15.5.4",
+    "style-loader": "^0.18.1",
+    "webpack": "^2.6.1"
+  },
+  "dependencies": {
+    "express": "^4.15.3",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
+  }
+}
