@@ -1,0 +1,9 @@
+{
+  "name": "React Component Catalog",
+  "short_name": "React Comp Catalog",
+  "theme_color": "#2196f3",
+  "background_color": "#2196f3",
+  "display": "standalone",
+  "scope": "/react-component-catalog",
+  "start_url": "/react-component-catalog"
+}
