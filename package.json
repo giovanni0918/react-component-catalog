@@ -4,9 +4,9 @@
   "description": "My React component library. Designed to organize, test, and maintain the stateless functional components I use across all my React apps.",
   "main": "server.js",
   "scripts": {
-    "start": "npm run flow && npm run test -- Button.test.js && webpack && node ./server.js",
+    "start": "npm run flow && npm run test && webpack && node ./server.js",
     "flow": "flow check",
-    "test": "jest"
+    "test": "jest -- Button.test.js && jest -- ButtonGroup.test.js"
   },
   "repository": "https://github.com/giovanni0918/react-component-catalog.git",
   "author": "Giovanni Orlando <gorlandor@gmail.com>",

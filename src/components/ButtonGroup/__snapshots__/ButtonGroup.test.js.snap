@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`It should always render a div 1`] = `
+<div
+  className="ButtonGroup"
+>
+  <button
+    className="Button"
+    onClick={[Function]}
+  >
+    button
+  </button>
+  <button
+    className="Button Button--default"
+    onClick={[Function]}
+  >
+    default
+  </button>
+  <button
+    className="Button Button--primary"
+    onClick={[Function]}
+  >
+    primary
+  </button>
+  <button
+    className="Button Button--info"
+    onClick={[Function]}
+  >
+    info
+  </button>
+  <button
+    className="Button Button--success"
+    onClick={[Function]}
+  >
+    success
+  </button>
+  <button
+    className="Button Button--warning"
+    onClick={[Function]}
+  >
+    warning
+  </button>
+  <button
+    className="Button Button--danger"
+    onClick={[Function]}
+  >
+    danger
+  </button>
+</div>
+`;

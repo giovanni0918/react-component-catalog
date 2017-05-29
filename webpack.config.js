@@ -4,7 +4,8 @@ const path = require("path");
 module.exports = {
   entry: {
     "App.bundle": "./src/App.entry.js",
-    "Button.bundle": "./src/Button.entry.js"
+    "Button.bundle": "./src/Button.entry.js",
+    "ButtonGroup.bundle": "./src/ButtonGroup.entry.js"
   },
   output: {
     "path": path.resolve(__dirname, "public"),

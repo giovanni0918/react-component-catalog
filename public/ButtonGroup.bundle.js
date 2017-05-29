@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 176);
+/******/ 	return __webpack_require__(__webpack_require__.s = 177);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -21283,9 +21283,50 @@ module.exports = function (css) {
 
 
 /***/ }),
-/* 174 */,
+/* 174 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(28);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _ButtonGroup = __webpack_require__(179);
+
+var _ButtonGroup2 = _interopRequireDefault(_ButtonGroup);
+
+var _Button = __webpack_require__(79);
+
+var _Button2 = _interopRequireDefault(_Button);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var ButtonGroup = function ButtonGroup(_ref) {
+  var className = _ref.className,
+      buttons = _ref.buttons;
+  return _react2.default.createElement(
+    'div',
+    { className: className },
+    buttons.map(function (button, buttonId, arr) {
+      return _react2.default.createElement(_Button2.default, { key: buttonId,
+        className: button.className,
+        onClick: button.onClick,
+        textContent: button.textContent });
+    })
+  );
+};
+exports.default = ButtonGroup;
+
+/***/ }),
 /* 175 */,
-/* 176 */
+/* 176 */,
+/* 177 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21297,18 +21338,109 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactDom = __webpack_require__(76);
 
-var _Button = __webpack_require__(79);
+var _ButtonGroup = __webpack_require__(174);
 
-var _Button2 = _interopRequireDefault(_Button);
+var _ButtonGroup2 = _interopRequireDefault(_ButtonGroup);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-(0, _reactDom.render)(_react2.default.createElement(_Button2.default, {
-  className: 'Button Button--primary',
-  onClick: function onClick(event) {
-    return console.log('Button Button--primary');
-  },
-  textContent: 'hello' }), document.getElementById('Button'));
+(0, _reactDom.render)(_react2.default.createElement(_ButtonGroup2.default, {
+  className: 'ButtonGroup',
+  buttons: [{
+    'className': 'Button',
+    onClick: function onClick() {
+      console.log('button');
+    },
+
+    'textContent': 'button'
+  }, {
+    'className': 'Button Button--default',
+    onClick: function onClick() {
+      console.log('default');
+    },
+
+    'textContent': 'default'
+  }, {
+    'className': 'Button Button--primary',
+    onClick: function onClick() {
+      console.log('primary');
+    },
+
+    'textContent': 'primary'
+  }, {
+    'className': 'Button Button--info',
+    onClick: function onClick() {
+      console.log('info');
+    },
+
+    'textContent': 'info'
+  }, {
+    'className': 'Button Button--success',
+    onClick: function onClick() {
+      console.log('success');
+    },
+
+    'textContent': 'success'
+  }, {
+    'className': 'Button Button--warning',
+    onClick: function onClick() {
+      console.log('warning');
+    },
+
+    'textContent': 'warning'
+  }, {
+    'className': 'Button Button--danger',
+    onClick: function onClick() {
+      console.log('danger');
+    },
+
+    'textContent': 'danger'
+  }] }), document.getElementById('ButtonGroup'));
+
+/***/ }),
+/* 178 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(77)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, ".ButtonGroup {\r\n    box-sizing: border-box;\r\n}", ""]);
+
+// exports
+
+
+/***/ }),
+/* 179 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(178);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// Prepare cssTransformation
+var transform;
+
+var options = {}
+options.transform = transform
+// add the styles to the DOM
+var update = __webpack_require__(78)(content, options);
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../../../node_modules/css-loader/index.js??ref--0-1!../../../node_modules/postcss-loader/lib/index.js!./ButtonGroup.css", function() {
+			var newContent = require("!!../../../node_modules/css-loader/index.js??ref--0-1!../../../node_modules/postcss-loader/lib/index.js!./ButtonGroup.css");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
 
 /***/ })
 /******/ ]);

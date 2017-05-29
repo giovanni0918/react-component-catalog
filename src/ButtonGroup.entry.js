@@ -1,11 +1,8 @@
 import React from 'react';
-import ButtonGroup from './ButtonGroup';
-import renderer from 'react-test-renderer';
+import { render } from 'react-dom';
+import ButtonGroup from './components/ButtonGroup/ButtonGroup.js';
 
-/**
- * ButtonGroup sample usage
- */
-const SampleButtonGroup = (
+render(
   <ButtonGroup
     className='ButtonGroup'
     buttons={[
@@ -44,34 +41,6 @@ const SampleButtonGroup = (
         onClick() { console.log('danger') },
         'textContent': 'danger'
       }
-    ]} />
+    ]} />,
+  document.getElementById('ButtonGroup')
 );
-
-/**
- * Checks that the ButtonGroup renders correctly
- */
-test('It should always render a div', () => {
-  const component = renderer.create(SampleButtonGroup);
-  let tree = component.toJSON();
-  expect(tree).toMatchSnapshot();
-});
-
-/**
- * Checks that the ButtonGroup is passed a buttons array
- */
-test('It should have a prop children of type=array', () => {
-  const component = renderer.create(SampleButtonGroup);
-  let tree = component.toJSON();
-  expect(Array.isArray(tree.children)).toBe(true);
-
-});
-
-/**
- * Checks that each child in prop children is of type=button
- */
-test('It should only contain children of type=button', () => {
-  const component = renderer.create(SampleButtonGroup);
-  let tree = component.toJSON();
-  const isButton = (childNode) => childNode.type === 'button';
-  expect(tree.children.every(isButton)).toBe(true);
-});

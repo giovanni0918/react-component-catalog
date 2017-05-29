@@ -8,13 +8,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#2196F3">
   <link rel="preload" href="./Button.bundle.js" as="script">
+  <link rel="preload" href="./ButtonGroup.bundle.js" as="script">
+  <style>
+    html,
+    body {
+      width: 100%;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+      border: none;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 992px;
+      height: 100%;
+      margin: 0 auto;
+      padding: 1rem;
+      border: none;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1rem;
+      font-weight: 500;
+    }
+
+    .container a {
+      color: dodgerblue;
+      text-decoration: none;
+    }
+
+    .container a:hover,
+    .container a:focus {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 
 <body>
   <div class="container">
+    <h1>React Component Catalog by <a href="https://github.com/giovanni0918">@giovanni0918</a></h1>
+    <hr>
+    <h2>Button: </h2>
     <div id="Button"></div>
+    <h2>ButtonGroup: </h2>
+    <div id="ButtonGroup"></div>
   </div>
   <script src="./Button.bundle.js"></script>
+  <script src="./ButtonGroup.bundle.js"></script>
 </body>
 
 </html>
