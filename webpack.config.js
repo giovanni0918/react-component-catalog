@@ -6,7 +6,8 @@ module.exports = {
     "App.bundle": "./src/App.entry.js",
     "Button.bundle": "./src/Button.entry.js",
     "ButtonGroup.bundle": "./src/ButtonGroup.entry.js",
-    "Card.bundle": "./src/Card.entry.js"
+    "Card.bundle": "./src/Card.entry.js",
+    "Toolbar.bundle": "./src/Toolbar.entry.js"
   },
   output: {
     "path": path.resolve(__dirname, "docs"),

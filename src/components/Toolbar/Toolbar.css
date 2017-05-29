@@ -1,0 +1,85 @@
+.Toolbar {
+    box-sizing: border-box;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 3.5rem;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 2px;
+    background-color: dodgerblue;
+    color: ghostwhite;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Toolbar a {
+    flex: 1;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    will-change: transform;
+    transform: scale(1.0);
+    transition: transform 0.2s ease-in-out;
+}
+
+.Toolbar a:hover,
+.Toolbar a:focus {
+    text-decoration: underline;
+    transform: scale(1.05);
+}
+
+.Toolbar--purple {
+    background-color: #9C27B0;
+    color: white;
+}
+
+.Toolbar--deep-purple {
+    background-color: #673AB7;
+    color: white;
+}
+
+.Toolbar--indigo {
+    background-color: #3F51B5;
+    color: white;
+}
+
+.Toolbar--teal {
+    background-color: #009688;
+    color: white;
+}
+
+.Toolbar--green {
+    background-color: #4CAF50;
+    color: black;
+}
+
+.Toolbar--primary {
+    background-color: dodgerblue;
+    color: black;
+}
+
+.Toolbar--info {
+    background-color: powderblue;
+    color: black;
+}
+
+.Toolbar--success {
+    background-color: springgreen;
+    color: black;
+}
+
+.Toolbar--warning {
+    background-color: lightgoldenrodyellow;
+    color: black;
+}
+
+.Toolbar--danger {
+    background-color: palevioletred;
+    color: black;
+}

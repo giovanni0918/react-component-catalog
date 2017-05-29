@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 179);
+/******/ 	return __webpack_require__(__webpack_require__.s = 181);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -21202,133 +21202,54 @@ module.exports = function (css) {
 
 
 /***/ }),
-/* 171 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _react = __webpack_require__(28);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _Button = __webpack_require__(173);
-
-var _Button2 = _interopRequireDefault(_Button);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var Button = function Button(_ref) {
-  var className = _ref.className,
-      onClick = _ref.onClick,
-      textContent = _ref.textContent;
-  return _react2.default.createElement(
-    'button',
-    {
-      className: className,
-      onClick: onClick },
-    textContent
-  );
-};
-
-exports.default = Button;
-
-/***/ }),
-/* 172 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(77)(undefined);
-// imports
-
-
-// module
-exports.push([module.i, ".Button {\r\n    box-sizing: border-box;\r\n    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);\r\n    min-width: 5rem;\r\n    margin: 0;\r\n    padding: 0.5rem;\r\n    border: 1px solid #404040;\r\n    border-radius: 2px;\r\n    outline-color: transparent;\r\n    font-family: Arial, Helvetica, sans-serif;\r\n    font-size: 1rem;\r\n    font-weight: 500;\r\n    background-color: ghostwhite;\r\n    color: black;\r\n    text-transform: capitalize;\r\n    will-change: transform;\r\n    -webkit-transform: scale(1.0);\r\n            transform: scale(1.0);\r\n    transition: -webkit-transform 0.2s ease-in-out;\r\n    transition: transform 0.2s ease-in-out;\r\n    transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;\r\n}\r\n\r\n.Button:hover, .Button:focus {\r\n    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);\r\n}\r\n\r\n.Button:active {\r\n    -webkit-transform: scale(1.1);\r\n            transform: scale(1.1);\r\n}\r\n\r\n.Button--default {\r\n    background-color: lightgrey;\r\n    color: black;\r\n}\r\n\r\n.Button--primary {\r\n    background-color: dodgerblue;\r\n    color: black;\r\n}\r\n\r\n.Button--info {\r\n    background-color: powderblue;\r\n    color: black;\r\n}\r\n\r\n.Button--success {\r\n    background-color: springgreen;\r\n    color: black;\r\n}\r\n\r\n.Button--warning {\r\n    background-color: lightgoldenrodyellow;\r\n    color: black;\r\n}\r\n\r\n.Button--danger {\r\n    background-color: palevioletred;\r\n    color: black;\r\n}", ""]);
-
-// exports
-
-
-/***/ }),
-/* 173 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(172);
-if(typeof content === 'string') content = [[module.i, content, '']];
-// Prepare cssTransformation
-var transform;
-
-var options = {}
-options.transform = transform
-// add the styles to the DOM
-var update = __webpack_require__(78)(content, options);
-if(content.locals) module.exports = content.locals;
-// Hot Module Replacement
-if(false) {
-	// When the styles change, update the <style> tags
-	if(!content.locals) {
-		module.hot.accept("!!../../../node_modules/css-loader/index.js??ref--0-1!../../../node_modules/postcss-loader/lib/index.js!./Button.css", function() {
-			var newContent = require("!!../../../node_modules/css-loader/index.js??ref--0-1!../../../node_modules/postcss-loader/lib/index.js!./Button.css");
-			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-			update(newContent);
-		});
-	}
-	// When the module is disposed, remove the <style> tags
-	module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 174 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _react = __webpack_require__(28);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _ButtonGroup = __webpack_require__(185);
-
-var _ButtonGroup2 = _interopRequireDefault(_ButtonGroup);
-
-var _Button = __webpack_require__(171);
-
-var _Button2 = _interopRequireDefault(_Button);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var ButtonGroup = function ButtonGroup(_ref) {
-  var className = _ref.className,
-      buttons = _ref.buttons;
-  return _react2.default.createElement(
-    'div',
-    { className: className },
-    buttons.map(function (button, buttonId, arr) {
-      return _react2.default.createElement(_Button2.default, { key: buttonId,
-        className: button.className,
-        onClick: button.onClick,
-        textContent: button.textContent });
-    })
-  );
-};
-exports.default = ButtonGroup;
-
-/***/ }),
+/* 171 */,
+/* 172 */,
+/* 173 */,
+/* 174 */,
 /* 175 */,
-/* 176 */,
+/* 176 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(28);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _Toolbar = __webpack_require__(187);
+
+var _Toolbar2 = _interopRequireDefault(_Toolbar);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Toolbar = function Toolbar(_ref) {
+  var className = _ref.className,
+      textContent = _ref.textContent,
+      homeURL = _ref.homeURL;
+  return _react2.default.createElement(
+    'header',
+    { className: className },
+    _react2.default.createElement(
+      'a',
+      { href: homeURL },
+      textContent
+    )
+  );
+};
+
+exports.default = Toolbar;
+
+/***/ }),
 /* 177 */,
 /* 178 */,
-/* 179 */
+/* 179 */,
+/* 180 */,
+/* 181 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21340,69 +21261,22 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactDom = __webpack_require__(76);
 
-var _ButtonGroup = __webpack_require__(174);
+var _Toolbar = __webpack_require__(176);
 
-var _ButtonGroup2 = _interopRequireDefault(_ButtonGroup);
+var _Toolbar2 = _interopRequireDefault(_Toolbar);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-(0, _reactDom.render)(_react2.default.createElement(_ButtonGroup2.default, {
-  className: 'ButtonGroup',
-  buttons: [{
-    'className': 'Button',
-    onClick: function onClick() {
-      console.log('button');
-    },
-
-    'textContent': 'button'
-  }, {
-    'className': 'Button Button--default',
-    onClick: function onClick() {
-      console.log('default');
-    },
-
-    'textContent': 'default'
-  }, {
-    'className': 'Button Button--primary',
-    onClick: function onClick() {
-      console.log('primary');
-    },
-
-    'textContent': 'primary'
-  }, {
-    'className': 'Button Button--info',
-    onClick: function onClick() {
-      console.log('info');
-    },
-
-    'textContent': 'info'
-  }, {
-    'className': 'Button Button--success',
-    onClick: function onClick() {
-      console.log('success');
-    },
-
-    'textContent': 'success'
-  }, {
-    'className': 'Button Button--warning',
-    onClick: function onClick() {
-      console.log('warning');
-    },
-
-    'textContent': 'warning'
-  }, {
-    'className': 'Button Button--danger',
-    onClick: function onClick() {
-      console.log('danger');
-    },
-
-    'textContent': 'danger'
-  }] }), document.getElementById('ButtonGroup'));
+(0, _reactDom.render)(_react2.default.createElement(_Toolbar2.default, {
+  className: 'Toolbar Toolbar--deep-purple',
+  textContent: 'React Component Catalog',
+  homeURL: '#'
+}), document.getElementById('Toolbar'));
 
 /***/ }),
-/* 180 */,
-/* 181 */,
-/* 182 */
+/* 182 */,
+/* 183 */,
+/* 184 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(77)(undefined);
@@ -21410,21 +21284,21 @@ exports = module.exports = __webpack_require__(77)(undefined);
 
 
 // module
-exports.push([module.i, ".ButtonGroup {\r\n    box-sizing: border-box;\r\n}", ""]);
+exports.push([module.i, ".Toolbar {\r\n    box-sizing: border-box;\r\n    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);\r\n    width: 100%;\r\n    height: 3.5rem;\r\n    margin: 0;\r\n    padding: 0;\r\n    border: none;\r\n    border-radius: 2px;\r\n    background-color: dodgerblue;\r\n    color: ghostwhite;\r\n    font-family: Arial, Helvetica, sans-serif;\r\n    font-size: 1.2rem;\r\n    font-weight: 600;\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: horizontal;\r\n    -webkit-box-direction: normal;\r\n        -ms-flex-direction: row;\r\n            flex-direction: row;\r\n    -webkit-box-pack: justify;\r\n        -ms-flex-pack: justify;\r\n            justify-content: space-between;\r\n    -webkit-box-align: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n}\r\n\r\n.Toolbar a {\r\n    -webkit-box-flex: 1;\r\n        -ms-flex: 1;\r\n            flex: 1;\r\n    text-align: center;\r\n    text-decoration: none;\r\n    color: inherit;\r\n    will-change: transform;\r\n    -webkit-transform: scale(1.0);\r\n            transform: scale(1.0);\r\n    transition: -webkit-transform 0.2s ease-in-out;\r\n    transition: transform 0.2s ease-in-out;\r\n    transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;\r\n}\r\n\r\n.Toolbar a:hover, .Toolbar a:focus {\r\n    text-decoration: underline;\r\n    -webkit-transform: scale(1.05);\r\n            transform: scale(1.05);\r\n}\r\n\r\n.Toolbar--purple {\r\n    background-color: #9C27B0;\r\n    color: white;\r\n}\r\n\r\n.Toolbar--deep-purple {\r\n    background-color: #673AB7;\r\n    color: white;\r\n}\r\n\r\n.Toolbar--indigo {\r\n    background-color: #3F51B5;\r\n    color: white;\r\n}\r\n\r\n.Toolbar--teal {\r\n    background-color: #009688;\r\n    color: white;\r\n}\r\n\r\n.Toolbar--green {\r\n    background-color: #4CAF50;\r\n    color: black;\r\n}\r\n\r\n.Toolbar--primary {\r\n    background-color: dodgerblue;\r\n    color: black;\r\n}\r\n\r\n.Toolbar--info {\r\n    background-color: powderblue;\r\n    color: black;\r\n}\r\n\r\n.Toolbar--success {\r\n    background-color: springgreen;\r\n    color: black;\r\n}\r\n\r\n.Toolbar--warning {\r\n    background-color: lightgoldenrodyellow;\r\n    color: black;\r\n}\r\n\r\n.Toolbar--danger {\r\n    background-color: palevioletred;\r\n    color: black;\r\n}", ""]);
 
 // exports
 
 
 /***/ }),
-/* 183 */,
-/* 184 */,
-/* 185 */
+/* 185 */,
+/* 186 */,
+/* 187 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(182);
+var content = __webpack_require__(184);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -21438,8 +21312,8 @@ if(content.locals) module.exports = content.locals;
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!../../../node_modules/css-loader/index.js??ref--0-1!../../../node_modules/postcss-loader/lib/index.js!./ButtonGroup.css", function() {
-			var newContent = require("!!../../../node_modules/css-loader/index.js??ref--0-1!../../../node_modules/postcss-loader/lib/index.js!./ButtonGroup.css");
+		module.hot.accept("!!../../../node_modules/css-loader/index.js??ref--0-1!../../../node_modules/postcss-loader/lib/index.js!./Toolbar.css", function() {
+			var newContent = require("!!../../../node_modules/css-loader/index.js??ref--0-1!../../../node_modules/postcss-loader/lib/index.js!./Toolbar.css");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});

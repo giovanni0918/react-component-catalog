@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`It should always render a header 1`] = `
+<header
+  className="Toolbar Toolbar--deep-purple"
+>
+  <a
+    href="#"
+  >
+    React Component Catalog
+  </a>
+</header>
+`;
