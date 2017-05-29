@@ -1,0 +1,13 @@
+.Card {
+    box-sizing: border-box;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
+    min-height: 192px;
+    max-width: 768px;
+    margin: 0;
+    padding: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: white;
+    color: #202020;
+}

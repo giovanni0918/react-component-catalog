@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 177);
+/******/ 	return __webpack_require__(__webpack_require__.s = 179);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -21284,9 +21284,54 @@ module.exports = function (css) {
 
 /***/ }),
 /* 174 */,
-/* 175 */,
+/* 175 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(28);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _Card = __webpack_require__(183);
+
+var _Card2 = _interopRequireDefault(_Card);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Card = function Card(_ref) {
+  var className = _ref.className,
+      heading = _ref.heading,
+      copy = _ref.copy,
+      children = _ref.children;
+  return _react2.default.createElement(
+    'div',
+    { className: className },
+    _react2.default.createElement(
+      'h3',
+      null,
+      heading
+    ),
+    _react2.default.createElement(
+      'p',
+      null,
+      copy
+    ),
+    children
+  );
+};
+exports.default = Card;
+
+/***/ }),
 /* 176 */,
-/* 177 */
+/* 177 */,
+/* 178 */,
+/* 179 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21298,18 +21343,77 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactDom = __webpack_require__(76);
 
+var _Card = __webpack_require__(175);
+
+var _Card2 = _interopRequireDefault(_Card);
+
 var _Button = __webpack_require__(79);
 
 var _Button2 = _interopRequireDefault(_Button);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-(0, _reactDom.render)(_react2.default.createElement(_Button2.default, {
-  className: 'Button Button--primary',
-  onClick: function onClick(event) {
-    return console.log('Button Button--primary');
-  },
-  textContent: 'hello' }), document.getElementById('Button'));
+(0, _reactDom.render)(_react2.default.createElement(
+  _Card2.default,
+  {
+    className: 'Card',
+    heading: 'Google Pixel',
+    copy: 'Copper mug pork belly skateboard, freegan echo park fixie stumptown. Celiac banh mi tumblr fanny pack, intelligentsia live-edge glossier skill. Fanny pack pinterest celiac raw denim. Venmo master cleanse seitan williamsburg fab, mixtape sriracha synth lyft.' },
+  _react2.default.createElement(_Button2.default, {
+    className: 'Button Button--primary',
+    onClick: function onClick() {
+      return console.log('button inside a card');
+    },
+    textContent: 'button inside a card'
+  })
+), document.getElementById('Card'));
+
+/***/ }),
+/* 180 */,
+/* 181 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(77)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, ".Card {\r\n    box-sizing: border-box;\r\n    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);\r\n    min-height: 192px;\r\n    max-width: 768px;\r\n    margin: 0;\r\n    padding: 1rem;\r\n    font-family: Arial, Helvetica, sans-serif;\r\n    font-size: 1rem;\r\n    font-weight: 500;\r\n    background-color: white;\r\n    color: #202020;\r\n}", ""]);
+
+// exports
+
+
+/***/ }),
+/* 182 */,
+/* 183 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(181);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// Prepare cssTransformation
+var transform;
+
+var options = {}
+options.transform = transform
+// add the styles to the DOM
+var update = __webpack_require__(78)(content, options);
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../../../node_modules/css-loader/index.js??ref--0-1!../../../node_modules/postcss-loader/lib/index.js!./Card.css", function() {
+			var newContent = require("!!../../../node_modules/css-loader/index.js??ref--0-1!../../../node_modules/postcss-loader/lib/index.js!./Card.css");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
 
 /***/ })
 /******/ ]);
