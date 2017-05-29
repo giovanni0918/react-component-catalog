@@ -15,7 +15,7 @@ app.set('port', (process.env.PORT || 5000));
 /**
  * Tells node which directory to serve static content from
  */
-app.use(express.static('public'))
+app.use(express.static('docs'))
 
 /**
  * Enables GZip compression
