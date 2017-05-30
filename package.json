@@ -6,7 +6,7 @@
   "scripts": {
     "start": "npm run flow && npm run test && webpack && node ./server.js",
     "flow": "flow check",
-    "test": "jest -- Button.test.js && jest -- ButtonGroup.test.js && jest -- Card.test.js && jest -- Toolbar.test.js"
+    "test": "jest -- Button.test.js && jest -- ButtonGroup.test.js && jest -- Card.test.js && jest -- Input.test.js && jest -- Toolbar.test.js"
   },
   "repository": "https://github.com/giovanni0918/react-component-catalog.git",
   "author": "Giovanni Orlando <gorlandor@gmail.com>",

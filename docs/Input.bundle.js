@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 179);
+/******/ 	return __webpack_require__(__webpack_require__.s = 182);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -21202,7 +21202,12 @@ module.exports = function (css) {
 
 
 /***/ }),
-/* 171 */
+/* 171 */,
+/* 172 */,
+/* 173 */,
+/* 174 */,
+/* 175 */,
+/* 176 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21216,29 +21221,114 @@ var _react = __webpack_require__(28);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _Button = __webpack_require__(173);
+var _Input = __webpack_require__(190);
 
-var _Button2 = _interopRequireDefault(_Button);
+var _Input2 = _interopRequireDefault(_Input);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var Button = function Button(_ref) {
+var Input = function Input(_ref) {
   var className = _ref.className,
-      onClick = _ref.onClick,
-      textContent = _ref.textContent;
-  return _react2.default.createElement(
-    'button',
-    {
+      disabled = _ref.disabled,
+      id = _ref.id,
+      includeLabel = _ref.includeLabel,
+      max = _ref.max,
+      min = _ref.min,
+      name = _ref.name,
+      onBlur = _ref.onBlur,
+      onChange = _ref.onChange,
+      onFocus = _ref.onFocus,
+      required = _ref.required,
+      step = _ref.step,
+      type = _ref.type;
+  return includeLabel ? _react2.default.createElement(
+    'div',
+    null,
+    _react2.default.createElement(
+      'label',
+      { htmlFor: id },
+      name + ': '
+    ),
+    _react2.default.createElement('input', {
       className: className,
-      onClick: onClick },
-    textContent
-  );
+      disabled: disabled,
+      id: id,
+      max: max,
+      min: min,
+      name: name,
+      onBlur: onBlur,
+      onChange: onChange,
+      onFocus: onFocus,
+      placeholder: name,
+      required: required,
+      step: step,
+      type: type
+    })
+  ) : _react2.default.createElement('input', {
+    className: className,
+    disabled: disabled,
+    id: id,
+    max: max,
+    min: min,
+    name: name,
+    onBlur: onBlur,
+    onChange: onChange,
+    onFocus: onFocus,
+    placeholder: name,
+    required: required,
+    step: step,
+    type: type
+  });
 };
-
-exports.default = Button;
+exports.default = Input;
 
 /***/ }),
-/* 172 */
+/* 177 */,
+/* 178 */,
+/* 179 */,
+/* 180 */,
+/* 181 */,
+/* 182 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _react = __webpack_require__(28);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactDom = __webpack_require__(76);
+
+var _Input = __webpack_require__(176);
+
+var _Input2 = _interopRequireDefault(_Input);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+(0, _reactDom.render)(_react2.default.createElement(_Input2.default, {
+  className: 'Input',
+  type: 'email',
+  id: 'email',
+  includeLabel: false,
+  name: 'email',
+  onBlur: function onBlur(event) {
+    return console.info({ 'blurredAt': new Date().toTimeString().substring(0, 8) });
+  },
+  onChange: function onChange(event) {
+    return console.log({ 'value': event.target.value });
+  },
+  onFocus: function onFocus(event) {
+    return console.info({ 'focusedAt': new Date().toTimeString().substring(0, 8) });
+  },
+  required: true
+}), document.getElementById('Input'));
+
+/***/ }),
+/* 183 */,
+/* 184 */,
+/* 185 */,
+/* 186 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(77)(undefined);
@@ -21246,19 +21336,22 @@ exports = module.exports = __webpack_require__(77)(undefined);
 
 
 // module
-exports.push([module.i, ".Button {\r\n    box-sizing: border-box;\r\n    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);\r\n    min-width: 5rem;\r\n    margin: 0;\r\n    padding: 0.5rem;\r\n    border: 1px solid #404040;\r\n    border-radius: 2px;\r\n    outline-color: transparent;\r\n    font-family: Arial, Helvetica, sans-serif;\r\n    font-size: 1rem;\r\n    font-weight: 500;\r\n    background-color: ghostwhite;\r\n    color: black;\r\n    text-transform: capitalize;\r\n    will-change: transform;\r\n    -webkit-transform: scale(1.0);\r\n            transform: scale(1.0);\r\n    transition: -webkit-transform 0.2s ease-in-out;\r\n    transition: transform 0.2s ease-in-out;\r\n    transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;\r\n}\r\n\r\n.Button:hover, .Button:focus {\r\n    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);\r\n}\r\n\r\n.Button:active {\r\n    -webkit-transform: scale(1.1);\r\n            transform: scale(1.1);\r\n}\r\n\r\n.Button--default {\r\n    background-color: lightgrey;\r\n    color: black;\r\n}\r\n\r\n.Button--primary {\r\n    background-color: deepskyblue;\r\n    color: black;\r\n}\r\n\r\n.Button--info {\r\n    background-color: powderblue;\r\n    color: black;\r\n}\r\n\r\n.Button--success {\r\n    background-color: springgreen;\r\n    color: black;\r\n}\r\n\r\n.Button--warning {\r\n    background-color: lightgoldenrodyellow;\r\n    color: black;\r\n}\r\n\r\n.Button--danger {\r\n    background-color: palevioletred;\r\n    color: black;\r\n}", ""]);
+exports.push([module.i, ".Input {\r\n    box-sizing: border-box;\r\n    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);\r\n    font-family: Arial, Helvetica, sans-serif;\r\n    font-size: 1rem;\r\n    font-weight: 500;\r\n    margin: 0;\r\n    padding: 0.25rem;\r\n    border: 1px solid lightskyblue;\r\n    border-radius: 2px;\r\n}\r\n\r\n.Input~label {\r\n    text-transform: capitalize;\r\n}", ""]);
 
 // exports
 
 
 /***/ }),
-/* 173 */
+/* 187 */,
+/* 188 */,
+/* 189 */,
+/* 190 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(172);
+var content = __webpack_require__(186);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -21272,8 +21365,8 @@ if(content.locals) module.exports = content.locals;
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!../../../node_modules/css-loader/index.js??ref--0-1!../../../node_modules/postcss-loader/lib/index.js!./Button.css", function() {
-			var newContent = require("!!../../../node_modules/css-loader/index.js??ref--0-1!../../../node_modules/postcss-loader/lib/index.js!./Button.css");
+		module.hot.accept("!!../../../node_modules/css-loader/index.js??ref--0-1!../../../node_modules/postcss-loader/lib/index.js!./Input.css", function() {
+			var newContent = require("!!../../../node_modules/css-loader/index.js??ref--0-1!../../../node_modules/postcss-loader/lib/index.js!./Input.css");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -21281,37 +21374,6 @@ if(false) {
 	// When the module is disposed, remove the <style> tags
 	module.hot.dispose(function() { update(); });
 }
-
-/***/ }),
-/* 174 */,
-/* 175 */,
-/* 176 */,
-/* 177 */,
-/* 178 */,
-/* 179 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _react = __webpack_require__(28);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactDom = __webpack_require__(76);
-
-var _Button = __webpack_require__(171);
-
-var _Button2 = _interopRequireDefault(_Button);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-(0, _reactDom.render)(_react2.default.createElement(_Button2.default, {
-  className: 'Button Button--primary',
-  onClick: function onClick(event) {
-    return console.log('Button Button--primary');
-  },
-  textContent: 'hello' }), document.getElementById('Button'));
 
 /***/ })
 /******/ ]);

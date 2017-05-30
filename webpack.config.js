@@ -7,6 +7,7 @@ module.exports = {
     "Button.bundle": "./src/Button.entry.js",
     "ButtonGroup.bundle": "./src/ButtonGroup.entry.js",
     "Card.bundle": "./src/Card.entry.js",
+    "Input.bundle": "./src/Input.entry.js",
     "Toolbar.bundle": "./src/Toolbar.entry.js"
   },
   output: {
