@@ -1,7 +1,7 @@
 # React Component Catalog
-A React component library. Designed to organize, test, and maintain some of the UI components I use in my React apps.
+A React component library. Designed to organize, test, and maintain some of the UI components I use in my React apps. 
 
-## Due for an update
+> This repo will be updated shortly
 
 ## Demo
 View the Catalog: [https://giovanni-orlando.com/react-component-catalog/](https://giovanni-orlando.com/react-component-catalog/)
