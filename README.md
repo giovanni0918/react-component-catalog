@@ -1,5 +1,7 @@
 # React Component Catalog
-My React component library. Designed to organize, test, and maintain the stateless functional components I use across all my React apps.
+A React component library. Designed to organize, test, and maintain some of the UI components I use in my React apps.
+
+## Due for an update
 
 ## Demo
 View the Catalog: [https://giovanni-orlando.com/react-component-catalog/](https://giovanni-orlando.com/react-component-catalog/)
@@ -13,5 +15,5 @@ Each of the components in this library includes its own set of tests written usi
 ## Credits
 
 - License: [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0)
-- Copyright 2017: [Giovanni Orlando Rivera](https://github.com/giovanni0918)
+- Copyright 2020: [Giovanni Orlando Rivera](https://github.com/giovanni0918)
 - Website: <https://giovanni-orlando.com>
