@@ -1,28 +1,29 @@
 // @flow
-import React from 'react';
+import * as React from 'react';
 import styles from './Input.css';
 
 type Props = {
   className: string,
-  disabled: ?boolean,
+  disabled?: boolean,
   id: string,
   includeLabel: boolean,
-  max: ?number,
-  min: ?number,
+  max?: number,
+  min?: number,
   name: string,
-  onBlur: ?Function,
+  onBlur?: Function,
   onChange: Function,
-  onFocus: ?Function,
-  required: ?boolean,
-  step: ?number,
+  onFocus?: Function,
+  required?: boolean,
+  step?: number,
   type: string
 };
 
 const Input = ({
   className, disabled, id, includeLabel, max, min, name,
   onBlur, onChange, onFocus, required, step, type
-}: Props) => (
-
+}: Props): React.Node => {
+  
+  return (
     includeLabel ? (
       <div>
         <label htmlFor={id}>{`${name}: `}</label>
@@ -59,5 +60,6 @@ const Input = ({
           type={type}
         />
       )
-  );
+  )
+};
 export default Input;

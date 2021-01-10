@@ -8,7 +8,8 @@ module.exports = {
     "ButtonGroup.bundle": "./src/ButtonGroup.entry.js",
     "Card.bundle": "./src/Card.entry.js",
     "Input.bundle": "./src/Input.entry.js",
-    "Toolbar.bundle": "./src/Toolbar.entry.js"
+    "Toolbar.bundle": "./src/Toolbar.entry.js",
+    "Spinner.bundle": "./src/Spinner.entry.js",
   },
   output: {
     "path": path.resolve(__dirname, "docs"),

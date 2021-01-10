@@ -1,5 +1,5 @@
 // @flow
-import React from 'react';
+import * as React from 'react';
 import styles from './ButtonGroup.css';
 import Button from '../Button/Button.js';
 
@@ -9,7 +9,8 @@ type Props = { className: string, buttons: Array<ButtonProps> };
 const ButtonGroup = ({
   className,
   buttons
-}: Props) => (
+}: Props): React.Node => {
+  return (
     <div className={className}>
       {buttons.map((button, buttonId, arr) => (
         <Button key={buttonId}
@@ -18,6 +19,7 @@ const ButtonGroup = ({
           textContent={button.textContent} />
       ))}
     </div>
-  );
+  )
+};
 
 export default ButtonGroup;

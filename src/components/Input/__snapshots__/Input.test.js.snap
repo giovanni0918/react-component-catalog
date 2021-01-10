@@ -3,17 +3,10 @@
 exports[`It should always render an input 1`] = `
 <input
   className="Input"
-  disabled={undefined}
   id="email"
-  max={undefined}
-  min={undefined}
   name="email"
-  onBlur={undefined}
   onChange={[Function]}
-  onFocus={undefined}
   placeholder="email"
-  required={undefined}
-  step={undefined}
   type="email"
 />
 `;

@@ -1,5 +1,5 @@
 // @flow
-import React from 'react';
+import * as React from 'react';
 import styles from './Card.css';
 
 type Props = { className: string, heading: string, copy: string, children: Array<Object> };
@@ -9,7 +9,8 @@ const Card = ({
   heading,
   copy,
   children
-}: Props) => (
+}: Props): React.Node => {
+  return (
     <div className={className}>
       <h3>
         {heading}
@@ -19,5 +20,6 @@ const Card = ({
       </p>
       {children}
     </div>
-  );
+  )
+};
 export default Card;
