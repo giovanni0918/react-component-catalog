@@ -1,6 +1,8 @@
 # React Component Catalog
 A React component library. Designed to organize, test, and maintain some of the UI components I use in my React apps. 
 
+[![Dependency Status](https://david-dm.org/giovanni0918/react-component-catalog.svg)](https://david-dm.org/giovanni0918/react-component-catalog.svg)  
+
 > This repo will be updated shortly
 
 ## Demo
