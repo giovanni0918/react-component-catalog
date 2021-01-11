@@ -17,5 +17,5 @@ Each of the components in this library includes its own set of tests written usi
 ## Credits
 
 - License: [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0)
-- Copyright 2020: [Giovanni Orlando Rivera](https://github.com/giovanni0918)
+- Copyright 2021: [Giovanni Orlando Rivera](https://github.com/giovanni0918)
 - Website: <https://giovanni-orlando.com>
